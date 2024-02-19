@@ -1,0 +1,41 @@
+{
+  "name": "awesome-mac",
+  "version": "1.5.0",
+  "description": " This repo is a collection of awesome Mac applications and tools for developers and designers. ",
+  "homepage": "https://jaywcjlove.github.io/awesome-mac",
+  "funding": "https://jaywcjlove.github.io/#/sponsor",
+  "main": "dist/awesome-mac.json",
+  "scripts": {
+    "start": "npm run build && npm run create:ast",
+    "doc": "idoc --watch",
+    "build": "idoc",
+    "create:ast": "node build/ast.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaywcjlove/awesome-mac.git"
+  },
+  "keywords": [
+    "awesome",
+    "awesome-mac",
+    "mac",
+    "macosx",
+    "osx"
+  ],
+  "files": [
+    "dist/awesome-mac.json",
+    "dist/awesome-mac.zh.json"
+  ],
+  "author": "kenny wang <wowohoo@qq.com>",
+  "license": "CC-BY-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/jaywcjlove/awesome-mac/issues"
+  },
+  "devDependencies": {
+    "fs-extra": "^10.1.0",
+    "idoc": "^1.26.5",
+    "remark": "^14.0.2",
+    "remark-gfm": "^3.0.1",
+    "to-vfile": "^7.2.3"
+  }
+}
